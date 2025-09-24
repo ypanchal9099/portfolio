@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Yesha Panchal — Portfolio</title>
+<!-- Tailwind CSS CDN (needs internet) -->
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+  .chip{display:inline-block;border-radius:9999px;background:#f3f4f6;padding:.25rem .5rem;font-size:.75rem;color:#374151}
+  .card{transition:transform .25s ease, box-shadow .25s ease}
+  .card:hover{transform:translateY(-4px);box-shadow:0 14px 32px rgba(2,6,23,.12)}
+  .gradient-title{background:linear-gradient(90deg,#4f46e5,#db2777,#0ea5e9,#22c55e);background-size:300% 300%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:shift 8s ease-in-out infinite}
+  @keyframes shift{0%,100%{background-position:0% 50%}50%{background-position:100% 50%}}
+  .icon{width:18px;height:18px}
+  .icon-btn{border:1px solid #e5e7eb;border-radius:9999px;padding:.4rem .75rem;display:inline-flex;align-items:center;gap:.5rem}
+</style>
+</head>
+<body class="bg-gradient-to-b from-gray-50 to-white text-gray-800">
+
+<header class="sticky top-0 z-40 backdrop-blur bg-white/80 border-b border-gray-200">
+  <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
+    <a class="font-semibold tracking-tight" href="#">Yesha Panchal</a>
+    <nav class="hidden md:flex gap-6 text-sm">
+      <a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a>
+      <a href="#experience">Experience</a><a href="#contact">Contact</a>
+    </nav>
+    <div class="flex gap-2">
+      <a href="https://github.com/ypanchal9099" target="_blank" class="icon-btn">
+        <svg class="icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5A11.5 11.5 0 0 0 .5 12.3c0 5.25 3.44 9.7 8.21 11.28.6.11.82-.26.82-.58l-.02-2.09c-3.34.74-4.04-1.62-4.04-1.62-.55-1.43-1.35-1.8-1.35-1.8-1.11-.78.08-.76.08-.76 1.22.09 1.86 1.27 1.86 1.27 1.09 1.94 2.85 1.38 3.55 1.05.11-.82.43-1.38.79-1.7-2.67-.31-5.47-1.37-5.47-6.1 0-1.35.47-2.46 1.25-3.33-.12-.31-.54-1.57.12-3.28 0 0 1.02-.33 3.34 1.27a11.4 11.4 0 0 1 6.08 0c2.31-1.6 3.33-1.27 3.33-1.27.66 1.71.24 2.97.12 3.28.78.87 1.25 1.98 1.25 3.33 0 4.75-2.8 5.78-5.47 6.09.44.39.84 1.14.84 2.3l-.01 3.4c0 .32.22.7.83.58A11.53 11.53 0 0 0 23.5 12.3 11.5 11.5 0 0 0 12 .5z"/></svg>
+        <span class="hidden sm:inline">GitHub</span>
+      </a>
+      <a href="https://www.linkedin.com/in/yesha-panchal-b8a6852b5" target="_blank" class="icon-btn">
+        <svg class="icon" viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5A2.5 2.5 0 1 1 5 8.5a2.5 2.5 0 0 1-.02-5zM3 9h4v12H3zM10 9h3.8v1.64h.05c.53-.95 1.84-1.95 3.8-1.95 4.06 0 4.8 2.67 4.8 6.14V21h-4v-5.35c0-1.27-.02-2.9-1.77-2.9-1.77 0-2.04 1.38-2.04 2.81V21h-4z"/></svg>
+        <span class="hidden sm:inline">LinkedIn</span>
+      </a>
+    </div>
+  </div>
+</header>
+
+<section class="max-w-6xl mx-auto px-4 py-16 grid md:grid-cols-12 gap-8 items-center">
+  <div class="md:col-span-7">
+    <h1 class="text-4xl md:text-5xl font-extrabold leading-tight tracking-tight gradient-title">Data & Software Engineer</h1>
+    <p class="mt-4 text-gray-600 max-w-prose">I build data pipelines, dashboards, and full-stack apps. Passionate about turning messy data into decisions.</p>
+    <div class="mt-6 flex flex-wrap gap-3">
+      <a href="#projects" class="bg-gray-900 text-white px-5 py-2 rounded-full text-sm font-medium">View Projects →</a>
+      <a href="#contact" class="border border-gray-300 px-5 py-2 rounded-full text-sm font-medium">Contact Me ✉️</a>
+    </div>
+    <div class="mt-4 text-sm text-gray-500 flex gap-3 flex-wrap">
+      <span>📍 Kitchener, ON</span><span>•</span><span>Open to full-time roles</span>
+    </div>
+  </div>
+  <div class="md:col-span-5">
+    <div class="rounded-2xl border p-6 shadow-sm bg-white/70 card">
+      <p class="text-xs uppercase tracking-widest text-gray-500">Featured Stack</p>
+      <div class="mt-3 flex flex-wrap gap-2 text-sm">
+        <span class="chip">Python</span><span class="chip">SQL Server</span><span class="chip">Tableau</span>
+        <span class="chip">React</span><span class="chip">Spark</span><span class="chip">FastAPI</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="max-w-6xl mx-auto px-4 py-10 grid md:grid-cols-12 gap-6">
+  <div class="md:col-span-7 border rounded-2xl p-6 bg-white/70 shadow-sm card">
+    <h2 class="text-2xl font-semibold">About</h2>
+    <p class="mt-3 text-sm leading-6 text-gray-700">IT grad with hands-on experience across analytics and web development. I enjoy building clean, reliable data pipelines and visual stories that help teams make decisions.</p>
+    <ul class="mt-4 grid md:grid-cols-2 gap-2 text-sm text-gray-700">
+      <li>• Python, SQL, React, Django</li><li>• Tableau, Power BI, Pandas</li>
+      <li>• Spark, ETL, APIs</li><li>• Git, CI/CD basics</li>
+    </ul>
+  </div>
+  <div class="md:col-span-5 border rounded-2xl p-6 bg-white/70 shadow-sm card">
+    <h3 class="text-lg font-semibold">Fast Facts</h3>
+    <div class="mt-4 text-sm space-y-2">
+      <div class="flex justify-between"><span>Years coding</span><span class="font-medium">3+</span></div>
+      <div class="flex justify-between"><span>Dashboards built</span><span class="font-medium">10+</span></div>
+      <div class="flex justify-between"><span>Favorite tools</span><span class="font-medium">Python • SQL • Tableau</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="skills" class="max-w-6xl mx-auto px-4 py-10">
+  <h2 class="text-2xl font-semibold mb-4">Skills</h2>
+  <div class="grid md:grid-cols-3 gap-4">
+    <div class="border rounded-2xl p-6 bg-white/70 shadow-sm card">
+      <h3 class="font-semibold mb-2">Programming & Web</h3>
+      <p>Python, JavaScript, React.js, HTML5, CSS3, Django, Flask, FastAPI</p>
+    </div>
+    <div class="border rounded-2xl p-6 bg-white/70 shadow-sm card">
+      <h3 class="font-semibold mb-2">Data & Tools</h3>
+      <p>SQL Server, MongoDB, Pandas, Tableau, Power BI, Apache Spark, ETL Pipelines, Git</p>
+    </div>
+    <div class="border rounded-2xl p-6 bg-white/70 shadow-sm card">
+      <h3 class="font-semibold mb-2">Concepts</h3>
+      <p>REST APIs, QA Testing, Big Data, Data Visualization</p>
+    </div>
+  </div>
+</section>
+
+<section id="projects" class="max-w-6xl mx-auto px-4 py-10">
+  <h2 class="text-2xl font-semibold mb-6">Projects</h2>
+  <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <div class="border rounded-2xl p-6 bg-white/70 shadow-sm card">
+      <h3 class="font-semibold">Python → SQL → Tableau Pipeline</h3>
+      <p class="text-xs text-gray-500">Data Engineering / Analytics</p>
+      <p class="mt-2 text-sm">Automated cleaning in Python, loaded to SQL Server, and built a Tableau dashboard.</p>
+    </div>
+    <div class="border rounded-2xl p-6 bg-white/70 shadow-sm card">
+      <h3 class="font-semibold">Smart Job Tracker (Flask)</h3>
+      <p class="text-xs text-gray-500">Full-Stack Web App</p>
+      <p class="mt-2 text-sm">Resume matcher + application tracker with auth and analytics.</p>
+    </div>
+    <div class="border rounded-2xl p-6 bg-white/70 shadow-sm card">
+      <h3 class="font-semibold">Kafka News Streaming</h3>
+      <p class="text-xs text-gray-500">Big Data Streaming</p>
+      <p class="mt-2 text-sm">NewsAPI → Kafka → Spark → insights pipeline.</p>
+    </div>
+  </div>
+</section>
+
+<section id="experience" class="max-w-6xl mx-auto px-4 py-10">
+  <h2 class="text-2xl font-semibold mb-6">Experience</h2>
+  <div class="space-y-4">
+    <div class="border rounded-2xl p-6 bg-white/70 shadow-sm card">
+      <h3 class="font-semibold">Customer Service / Cashier • Walmart Canada</h3>
+      <p class="text-xs text-gray-500">Oct 2024 – Present</p>
+      <ul class="mt-2 list-disc pl-5 text-sm text-gray-700">
+        <li>Enhanced customer experience in a fast-paced environment.</li>
+        <li>Developed teamwork and communication skills under pressure.</li>
+      </ul>
+    </div>
+    <div class="border rounded-2xl p-6 bg-white/70 shadow-sm card">
+      <h3 class="font-semibold">Web Developer • NXS Infotech</h3>
+      <p class="text-xs text-gray-500">Jul 2021 – Jun 2023</p>
+      <ul class="mt-2 list-disc pl-5 text-sm text-gray-700">
+        <li>Built and maintained 10+ client sites; improved load times by 30%.</li>
+        <li>Automated bug tracking; reduced reporting delays by 25%.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="max-w-6xl mx-auto px-4 py-10">
+  <h2 class="text-2xl font-semibold mb-4">Contact</h2>
+  <div class="grid md:grid-cols-12 gap-6">
+    <div class="md:col-span-7 border rounded-2xl p-6 bg-white/70 shadow-sm card">
+      <p class="text-sm">Best way is email or LinkedIn. I’m open to Data Analyst, Data Engineer, or Software roles.</p>
+      <div class="mt-4 flex flex-col gap-2 text-sm">
+        <a href="mailto:ybpanchal97@gmail.com" class="hover:underline">✉️ ybpanchal97@gmail.com</a>
+        <a href="tel:+14376691067" class="hover:underline">📞 +1 (437) 669-1067</a>
+      </div>
+    </div>
+    <div class="md:col-span-5 border rounded-2xl p-6 bg-white/70 shadow-sm card">
+      <h3 class="text-base font-semibold">Availability</h3>
+      <p class="mt-2 text-sm">Open to full-time roles in Canada. Remote or Kitchener/Waterloo.</p>
+    </div>
+  </div>
+</section>
+
+<footer class="border-t border-gray-200">
+  <div class="max-w-6xl mx-auto px-4 py-8 text-sm text-gray-500 flex justify-between">
+    <p>© 2025 Yesha Panchal</p>
+    <p>Built with HTML + Tailwind</p>
+  </div>
+</footer>
+
+</body>
+</html>
